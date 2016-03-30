@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+    <PropertyGroup>
+        <RootNamespace>SwiftFoundation.Nougat.iOS</RootNamespace>
+        <ProjectGuid>925568ED-8D84-414F-8645-2C5BD3B4C8DF</ProjectGuid>
+        <OutputType>StaticLibrary</OutputType>
+        <AssemblyName>SwiftFoundation.Nougat.iOS</AssemblyName>
+        <AllowGlobals>False</AllowGlobals>
+        <AllowLegacyWith>False</AllowLegacyWith>
+        <AllowLegacyOutParams>False</AllowLegacyOutParams>
+        <AllowLegacyCreate>False</AllowLegacyCreate>
+        <AllowUnsafeCode>False</AllowUnsafeCode>
+        <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+        <SDK>OS X</SDK>
+        <CreateHeaderFile>True</CreateHeaderFile>
+        <MinFrameworkVersionRequired>4.0</MinFrameworkVersionRequired>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <Optimize>false</Optimize>
+        <OutputPath>.\bin\Debug</OutputPath>
+        <DefineConstants>DEBUG;TRACE;</DefineConstants>
+        <GenerateDebugInfo>True</GenerateDebugInfo>
+        <EnableAsserts>True</EnableAsserts>
+        <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+        <CaptureConsoleOutput>False</CaptureConsoleOutput>
+        <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <Optimize>true</Optimize>
+        <OutputPath>.\bin\Release</OutputPath>
+        <GenerateDebugInfo>False</GenerateDebugInfo>
+        <EnableAsserts>False</EnableAsserts>
+        <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+        <CaptureConsoleOutput>False</CaptureConsoleOutput>
+        <WarnOnCaseMismatch>True</WarnOnCaseMismatch>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Foundation"/>
+        <Reference Include="rtl"/>
+        <Reference Include="libNougat"/>
+        <Reference Include="libSwift">
+            <HintPath>\Users\mh\Code\SwiftBaseLibrary\Source\bin\Debug\OS X\libSwift.fx</HintPath>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Base64.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\BitMaskOption.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\ByteValueType.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\ComparableSortDescriptor.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\ComparatorSortDescriptor.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Copying.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Data.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Date.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\DateComponents.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Decimal.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\FileDescriptor.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\FileManager.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\FilePermission.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\FileType.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Formatter.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\HTTP.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\HTTPMethod.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\HTTPRequest.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\HTTPResponse.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\HTTPStatusCode.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\HTTPVersion.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Integer.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\JSON.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\JSONExtensions.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\JSONParse.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\JSONSerialization.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\JSONWritingOption.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Null.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Order.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\POSIXError.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\POSIXFileStatus.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\POSIXFileSystemStatus.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\POSIXRegularExpression.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\POSIXTime.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\POSIXUUID.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Predicate.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\RawRepresentable.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\RegularExpression.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\RegularExpressionCompileError.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\RegularExpressionCompileOption.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\RegularExpressionMatchOption.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\SemanticVersion.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\SortDescriptor.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\String.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Task.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Transformer.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\URL.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\URLClient.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\URLProtocol.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\URLRequest.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\URLResponse.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\UUID.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\SwiftFoundation\Version.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\FoundationConvertible.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\HTTPClient.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSComparisonResult.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSData.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSDate.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSJSONSerialization.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSNull.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSString.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSURLSession.swift"/>
+        <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSUUID.swift"/>
+        <Compile Include="FakeNamespaces.pas"/>
+    </ItemGroup>
+    <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.Nougat.targets"/>
+</Project>

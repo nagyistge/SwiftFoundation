@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# RemObjects Fire
+Project("{656346D9-4656-40DA-A068-22D5425D4639}") = "SwiftFoundation.Nougat.OSX", "SwiftFoundation.Nougat.OSX.elements", "{925568ED-8D84-414F-8645-2C5BD3B4C8DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{925568ED-8D84-414F-8645-2C5BD3B4C8DF}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{925568ED-8D84-414F-8645-2C5BD3B4C8DF}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{925568ED-8D84-414F-8645-2C5BD3B4C8DF}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{925568ED-8D84-414F-8645-2C5BD3B4C8DF}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
