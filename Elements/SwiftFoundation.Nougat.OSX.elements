@@ -107,6 +107,9 @@
         <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSURLSession.swift"/>
         <Compile Include="..\..\SwiftFoundation\Sources\FoundationConvertible\NSUUID.swift"/>
         <Compile Include="FakeNamespaces.pas"/>
+        <Compile Include="Aliases.swift"/>
+        <Compile Include="_Darwin.swift"/>
+        <None Include="Darwin.swift"/>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\RemObjects Software\Elements\RemObjects.Elements.Nougat.targets"/>
 </Project>
